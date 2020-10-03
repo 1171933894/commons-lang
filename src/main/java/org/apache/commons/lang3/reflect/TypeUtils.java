@@ -304,7 +304,7 @@ public class TypeUtils {
     }
 
     /**
-     * <p>Checks if the subject type may be implicitly cast to the target type
+     * <p>Checks if the subject type may be implicitly?????cast to the target type
      * following the Java generics rules. If both types are {@link Class}
      * objects, the method returns the result of
      * {@link ClassUtils#isAssignable(Class, Class)}.</p>
