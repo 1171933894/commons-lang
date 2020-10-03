@@ -260,7 +260,7 @@ public class MethodUtils {
     }
 
     /**
-     * <p>Invokes a method whose parameter types match exactly the object
+     * <p>Invokes a method whose parameter types match exactly????the object
      * types.</p>
      *
      * <p>This uses reflection to invoke the method obtained from a call to
@@ -373,7 +373,7 @@ public class MethodUtils {
             throw new NoSuchMethodException("No such accessible method: "
                     + methodName + "() on class: " + cls.getName());
         }
-        return method.invoke(null, args);
+        return method.invoke(null, args);// ??????????????obj
     }
 
     /**

@@ -17,7 +17,7 @@
 package org.apache.commons.lang3.tuple;
 
 /**
- * <p>A mutable triple consisting of three {@code Object} elements.</p>
+ * <p>A mutable?????triple consisting of three {@code Object} elements.</p>
  *
  * <p>Not #ThreadSafe#</p>
  *
