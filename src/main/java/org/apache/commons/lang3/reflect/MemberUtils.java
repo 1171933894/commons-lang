@@ -26,7 +26,7 @@ import org.apache.commons.lang3.ClassUtils;
 
 /**
  * Contains common code for working with {@link java.lang.reflect.Method Methods}/{@link java.lang.reflect.Constructor Constructors},
- * extracted and refactored from {@link MethodUtils} when it was imported from Commons BeanUtils.
+ * extracted????and refactored????from {@link MethodUtils} when it was imported from Commons BeanUtils.
  *
  * @since 2.5
  */

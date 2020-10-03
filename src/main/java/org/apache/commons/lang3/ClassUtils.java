@@ -79,7 +79,7 @@ public class ClassUtils {
     public static final String INNER_CLASS_SEPARATOR = String.valueOf(INNER_CLASS_SEPARATOR_CHAR);
 
     /**
-     * Maps names of primitives to their corresponding primitive {@code Class}es.
+     * Maps names of primitives to their corresponding????primitive {@code Class}es.
      */
     private static final Map<String, Class<?>> namePrimitiveMap = new HashMap<>();
     static {
@@ -185,7 +185,7 @@ public class ClassUtils {
     }
 
     /**
-     * <p>Gets the class name minus the package name from a {@code Class}.</p>
+     * <p>Gets the class name minus????the package name from a {@code Class}.</p>
      *
      * <p>This method simply gets the name using {@code Class.getName()} and then calls
      * {@link #getShortClassName(Class)}. See relevant notes there.</p>
@@ -1042,7 +1042,7 @@ public class ClassUtils {
      *  false if not or {@code null}
      */
     public static boolean isInnerClass(final Class<?> cls) {
-        return cls != null && cls.getEnclosingClass() != null;
+        return cls != null && cls.getEnclosingClass() != null;// enclose????
     }
 
     // Class loading
@@ -1138,7 +1138,7 @@ public class ClassUtils {
     // Public method
     // ----------------------------------------------------------------------
     /**
-     * <p>Returns the desired Method much like {@code Class.getMethod}, however
+     * <p>Returns the desired?????Method much like {@code Class.getMethod}, however
      * it ensures that the returned Method is from a public class or interface and not
      * from an anonymous inner class. This means that the Method is invokable and
      * doesn't fall foul of Java bug

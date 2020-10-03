@@ -447,6 +447,7 @@ public class MethodUtils {
     }
 
     private static Object[] toVarArgs(final Method method, Object[] args) {
+        // java.lang.reflect.Method.isVarArgs()???????????????????????true; ????false
         if (method.isVarArgs()) {
             final Class<?>[] methodParameterTypes = method.getParameterTypes();
             args = getVarArgs(args, methodParameterTypes);
