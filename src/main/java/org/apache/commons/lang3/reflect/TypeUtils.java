@@ -50,6 +50,10 @@ public class TypeUtils {
      * {@link WildcardType} builder.
      * @since 3.2
      */
+    /**
+     *  WildcardType represents a wildcard type expression, such as
+     *  {@code ?}, {@code ? extends Number}, or {@code ? super Integer}.
+     */
     public static class WildcardTypeBuilder implements Builder<WildcardType> {
         /**
          * Constructor
@@ -92,6 +96,10 @@ public class TypeUtils {
     /**
      * GenericArrayType implementation class.
      * @since 3.2
+     */
+    /**
+     *  {@code GenericArrayType} represents an array type whose component
+     *  type is either a parameterized type or a type variable
      */
     private static final class GenericArrayTypeImpl implements GenericArrayType {
         private final Type componentType;
@@ -154,7 +162,7 @@ public class TypeUtils {
          * @param useOwner owner type to use, if any
          * @param typeArguments formal type arguments
          */
-        private ParameterizedTypeImpl(final Class<?> rawClass, final Type useOwner, final Type[] typeArguments) {
+        private ParameterizedTypeImpl(final Class<?> rawClass/*??*/, final Type useOwner, final Type[] typeArguments) {
             this.raw = rawClass;
             this.useOwner = useOwner;
             this.typeArguments = Arrays.copyOf(typeArguments, typeArguments.length, Type[].class);

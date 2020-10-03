@@ -19,7 +19,7 @@ package org.apache.commons.lang3.reflect;
 import org.apache.commons.lang3.BooleanUtils;
 
 /**
- * <p>Utility methods focusing on inheritance.</p>
+ * <p>Utility methods focusing on inheritance????.</p>
  *
  * @since 3.2
  */
@@ -46,6 +46,7 @@ public class InheritanceUtils {
      * -1 if the classes are not related as child and parent (includes where either class is null)
      * @since 3.2
      */
+    // ??????
     public static int distance(final Class<?> child, final Class<?> parent) {
         if (child == null || parent == null) {
             return -1;

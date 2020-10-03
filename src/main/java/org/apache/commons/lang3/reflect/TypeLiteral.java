@@ -72,7 +72,7 @@ import org.apache.commons.lang3.Validate;
  * @param <T> the type
  * @since 3.2
  */
-public abstract class TypeLiteral<T> implements Typed<T> {
+public abstract class TypeLiteral<T> implements Typed<T> {// literal???
 
     @SuppressWarnings("rawtypes")
     private static final TypeVariable<Class<TypeLiteral>> T = TypeLiteral.class.getTypeParameters()[0];
